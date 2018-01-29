@@ -1,5 +1,5 @@
 class PhoneNumber
   def self.clean(num)
-    num.gsub(/[( )-]/,'')
+    num.gsub(/[( )-.]/,'')
   end    
 end

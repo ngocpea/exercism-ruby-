@@ -14,7 +14,7 @@ class PhoneNumberTest < Minitest::Test
   end
 
   def test_cleans_numbers_with_multiple_spaces
-    skip
+    # skip
     assert_equal "2234567890", PhoneNumber.clean("223 456   7890   ")
   end
 
