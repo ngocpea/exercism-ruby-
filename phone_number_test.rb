@@ -9,7 +9,7 @@ class PhoneNumberTest < Minitest::Test
   end
 
   def test_cleans_numbers_with_dots
-    # sskip
+    # skip
     assert_equal "2234567890", PhoneNumber.clean("223.456.7890")
   end
 
@@ -24,12 +24,12 @@ class PhoneNumberTest < Minitest::Test
   end
 
   def test_invalid_when_11_digits_does_not_start_with_a_1
-    skip
+    #  skip
     assert_nil PhoneNumber.clean("22234567890")
   end
 
   def test_valid_when_11_digits_and_starting_with_1
-    skip
+    # skip
     assert_equal "2234567890", PhoneNumber.clean("12234567890")
   end
 
