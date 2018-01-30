@@ -39,27 +39,27 @@ class PhoneNumberTest < Minitest::Test
   end
 
   def test_invalid_when_more_than_11_digits
-    skip
+    # skip
     assert_nil PhoneNumber.clean("321234567890")
   end
 
   def test_invalid_with_letters
-    skip
+    # skip
     assert_nil PhoneNumber.clean("123-abc-7890")
   end
 
   def test_invalid_with_punctuations
-    skip
+    # skip
     assert_nil PhoneNumber.clean("123-@:!-7890")
   end
 
   def test_invalid_if_area_code_does_not_start_with_2_9
-    skip
+    # skip
     assert_nil PhoneNumber.clean("(123) 456-7890")
   end
 
   def test_invalid_if_exchange_code_does_not_start_with_2_9
-    skip
+    # skip
     assert_nil PhoneNumber.clean("(223) 056-7890")
   end
 
