@@ -34,7 +34,7 @@ class PhoneNumberTest < Minitest::Test
   end
 
   def test_valid_when_11_digits_and_starting_with_1_even_with_punctuation
-    skip
+    # skip
     assert_equal "2234567890", PhoneNumber.clean("+1 (223) 456-7890")
   end
 
